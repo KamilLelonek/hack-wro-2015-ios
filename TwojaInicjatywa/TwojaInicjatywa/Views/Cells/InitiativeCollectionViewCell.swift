@@ -18,10 +18,17 @@ class InitiativeCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         self.iconView.layer.cornerRadius = self.iconView.bounds.width/2.0
-        self.setIcon(UIImage(named: "city_placeholder")!)
     }
     
     func setIcon(image: UIImage) {
         self.iconView.image = image
+    }
+    
+    func setName(name: String) {
+        self.nameLabel.text = name
+    }
+    
+    func setDistance(distance: String) {
+        self.distanceLabel.text = distance
     }
 }

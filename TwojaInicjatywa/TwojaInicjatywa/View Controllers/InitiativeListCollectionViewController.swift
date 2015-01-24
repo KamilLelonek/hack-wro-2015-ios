@@ -40,12 +40,20 @@ class InitiativeListCollectionViewController: UICollectionViewController, UIColl
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("InitiativeCollectionViewCell", forIndexPath: indexPath) as UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("InitiativeCollectionViewCell", forIndexPath: indexPath) as InitiativeCollectionViewCell
+        
+        cell.setIcon(UIImage(named: "city_placeholder")!)
+        cell.setName("Moja nazwa inicjatywy")
+        cell.setDistance("0.312 km")
         
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.size.width - 10.0, height: 66.0)
+        return CGSize(width: self.view.frame.size.width - 14.0, height: 66.0)
+    }
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        println("asda")
     }
 }
