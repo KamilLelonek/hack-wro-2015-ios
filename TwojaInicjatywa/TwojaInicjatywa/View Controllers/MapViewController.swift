@@ -11,13 +11,18 @@ import UIKit
 let MapToDetailsSegueIdentifier = "MapToDetails"
 let MapToAddInitiativeSegueIdentifier = "MapToAddInitiative"
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController
+{
     
-    override func viewDidLoad() {
+    @IBOutlet weak var mapView: GMSMapView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        self.view.backgroundColor = UIColor.redColor()
+        var camera = GMSCameraPosition.cameraWithLatitude(51.09168, longitude:17.04015, zoom:14)
+        mapView = GMSMapView.mapWithFrame(CGRectZero, camera:camera)
+        
     }
     
     override func didReceiveMemoryWarning() {

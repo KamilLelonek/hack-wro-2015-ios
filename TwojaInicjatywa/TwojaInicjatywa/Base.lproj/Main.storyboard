@@ -106,11 +106,31 @@
                     <view key="view" contentMode="scaleToFill" id="1yC-4m-XLk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vL1-q0-HhH" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vL1-q0-HhH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="vL1-q0-HhH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="czO-fm-mQO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="mapView" destination="vL1-q0-HhH" id="8rP-0a-cZf"/>
                         <segue destination="KOr-lm-JBl" kind="show" identifier="MapToDetails" id="x2W-dx-aOF"/>
                         <segue destination="9Xd-BF-5aF" kind="show" identifier="MapToAddInitiative" id="Ewz-Z6-VdR"/>
                     </connections>
@@ -145,7 +165,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9eN-yj-nJf"/>
-        <segue reference="dIK-MN-JsU"/>
+        <segue reference="Ewz-Z6-VdR"/>
+        <segue reference="x2W-dx-aOF"/>
     </inferredMetricsTieBreakers>
 </document>
