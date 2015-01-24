@@ -12,5 +12,10 @@ let InitiativeToDetailsSegueIdentifier = "InitiativeToDetails"
 let InitiativeListToAddInitiativeSegueIdentifier = "InitiativeListToAddInitiative"
 
 class InitiativeListViewController: UIViewController {
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.yellowColor()
+    }
 }
