@@ -13,10 +13,16 @@ let InitiativeListToAddInitiativeSegueIdentifier = "InitiativeListToAddInitiativ
 
 class InitiativeListViewController: UIViewController {
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBAction func didChangeSort(sender: AnyObject) {
+        println("Sort")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.yellowColor()
+        self.view.backgroundColor = UIColor.grayColor()
     }
     
     @IBAction func addInitiative(sender: AnyObject) {

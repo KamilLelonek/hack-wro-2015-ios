@@ -43,6 +43,10 @@
 		844133AE1A73D23300DD56C7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844133AD1A73D23300DD56C7 /* AdSupport.framework */; };
 		844133B21A73D26B00DD56C7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844133B11A73D26B00DD56C7 /* CoreMotion.framework */; };
 		84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88F91A73B9E700F83619 /* Login.storyboard */; };
+		54B6B4891A73CF2700BF13FE /* InitiativeListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */; };
+		54B6B48B1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B48A1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift */; };
+		54B6B48F1A73D72600BF13FE /* InitiativeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B48E1A73D72600BF13FE /* InitiativeCollectionViewCell.xib */; };
+		84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88F91A73B9E700F83619 /* Login.storyboard */; };
 		9FC2218E1A73B4B900836590 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218D1A73B4B900836590 /* Profile.swift */; };
 		9FC221901A73B55400836590 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218F1A73B55400836590 /* Idea.swift */; };
 /* End PBXBuildFile section */
@@ -101,6 +105,10 @@
 		844133AD1A73D23300DD56C7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		844133AF1A73D25F00DD56C7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		844133B11A73D26B00DD56C7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		84CE88F91A73B9E700F83619 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeListCollectionViewController.swift; sourceTree = "<group>"; };
+		54B6B48A1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeCollectionViewCell.swift; path = Views/Cells/InitiativeCollectionViewCell.swift; sourceTree = "<group>"; };
+		54B6B48E1A73D72600BF13FE /* InitiativeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InitiativeCollectionViewCell.xib; path = Views/Cells/InitiativeCollectionViewCell.xib; sourceTree = "<group>"; };
 		84CE88F91A73B9E700F83619 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		9FC2218D1A73B4B900836590 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9FC2218F1A73B55400836590 /* Idea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				54B6B44E1A73AD5100BF13FE /* AppDelegate.swift */,
+				54B6B48C1A73D64200BF13FE /* Views */,
 				54B6B47B1A73C0CF00BF13FE /* View Controllers */,
 				9FC221931A73BA6D00836590 /* Model */,
 				54B6B4521A73AD5100BF13FE /* Main.storyboard */,
@@ -240,6 +249,7 @@
 				844131CA1A73CFAB00DD56C7 /* SignUpViewController.m */,
 				844131CC1A73CFC100DD56C7 /* SignInViewController.h */,
 				844131CD1A73CFC100DD56C7 /* SignInViewController.m */,
+				54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -255,6 +265,21 @@
 				844131D51A73D09F00DD56C7 /* README.txt */,
 			);
 			path = FacebookSDK;
+		54B6B48C1A73D64200BF13FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54B6B48D1A73D64B00BF13FE /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		54B6B48D1A73D64B00BF13FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				54B6B48A1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift */,
+				54B6B48E1A73D72600BF13FE /* InitiativeCollectionViewCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		9FC221931A73BA6D00836590 /* Model */ = {
@@ -354,6 +379,7 @@
 				54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */,
 				84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */,
 				844132F01A73D0A000DD56C7 /* README.txt in Resources */,
+				54B6B48F1A73D72600BF13FE /* InitiativeCollectionViewCell.xib in Resources */,
 				1168E2A11A73B5CB00F5B86C /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +408,9 @@
 				844131CB1A73CFAB00DD56C7 /* SignUpViewController.m in Sources */,
 				54B6B4871A73C0CF00BF13FE /* ProfileViewController.swift in Sources */,
 				54B6B4841A73C0CF00BF13FE /* InitiativeDetailsViewController.swift in Sources */,
+				54B6B4891A73CF2700BF13FE /* InitiativeListCollectionViewController.swift in Sources */,
 				54B6B4861A73C0CF00BF13FE /* MapViewController.swift in Sources */,
+				54B6B48B1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +534,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TwojaInicjatywa",
@@ -527,7 +556,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TwojaInicjatywa",
