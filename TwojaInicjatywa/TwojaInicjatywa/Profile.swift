@@ -23,8 +23,10 @@ class Profile {
     }
     
     func upVotes() {
-//        addedIdeas.reduce(0) { $0 + $1 }
+        addedIdeas.reduce(0) { $0 + $1.rank.upVotes }
     }
     
-    func downVotes() {}
+    func downVotes() {
+        addedIdeas.reduce(0) { $0 + $1.rank.downVotes }
+    }
 }
