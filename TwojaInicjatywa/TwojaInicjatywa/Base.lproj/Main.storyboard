@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K0E-fJ-Hxd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="APu-1S-51g">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -161,7 +160,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXO-RL-fNz">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -227,37 +226,37 @@
                                 <exclude reference="WXO-RL-fNz"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GfA-Xw-4wX"/>
-                                <exclude reference="lvy-By-pbu"/>
-                                <exclude reference="4f7-xe-zoB"/>
-                                <exclude reference="MVz-nw-yCS"/>
                                 <exclude reference="DRJ-aY-yYj"/>
                                 <exclude reference="WGh-jl-elP"/>
+                                <exclude reference="DLH-pE-ubo"/>
+                                <exclude reference="Kqb-7N-45Q"/>
+                                <exclude reference="1p8-b0-Igh"/>
+                                <exclude reference="Ipk-si-7eK"/>
+                                <exclude reference="nMQ-by-xyw"/>
                                 <exclude reference="7SH-Cm-CP1"/>
                                 <exclude reference="KXP-so-VVn"/>
                                 <exclude reference="UzL-Yw-0mA"/>
-                                <exclude reference="DLH-pE-ubo"/>
-                                <exclude reference="Kqb-7N-45Q"/>
-                                <exclude reference="hLG-yK-o44"/>
-                                <exclude reference="lkA-bA-4ID"/>
                                 <exclude reference="QIB-T9-Cme"/>
                                 <exclude reference="gUP-pB-vAx"/>
                                 <exclude reference="vUa-HP-kxH"/>
                                 <exclude reference="G2f-Ek-HZn"/>
                                 <exclude reference="NXU-k3-UTo"/>
+                                <exclude reference="hLG-yK-o44"/>
+                                <exclude reference="lkA-bA-4ID"/>
                                 <exclude reference="30q-pB-NZy"/>
                                 <exclude reference="Ab8-ui-qrs"/>
                                 <exclude reference="RJm-U8-9O7"/>
                                 <exclude reference="fb8-Vs-teJ"/>
+                                <exclude reference="HAG-KT-3VG"/>
+                                <exclude reference="Muf-Ib-x8H"/>
                                 <exclude reference="4rJ-y8-I70"/>
-                                <exclude reference="1p8-b0-Igh"/>
-                                <exclude reference="Ipk-si-7eK"/>
+                                <exclude reference="4f7-xe-zoB"/>
+                                <exclude reference="MVz-nw-yCS"/>
+                                <exclude reference="GfA-Xw-4wX"/>
+                                <exclude reference="lvy-By-pbu"/>
                                 <exclude reference="3jK-Ag-98H"/>
                                 <exclude reference="RCI-vM-RoO"/>
                                 <exclude reference="ta7-gb-C68"/>
-                                <exclude reference="HAG-KT-3VG"/>
-                                <exclude reference="Muf-Ib-x8H"/>
-                                <exclude reference="nMQ-by-xyw"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -277,37 +276,37 @@
                                 <include reference="WXO-RL-fNz"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="GfA-Xw-4wX"/>
-                                <include reference="lvy-By-pbu"/>
-                                <include reference="4f7-xe-zoB"/>
-                                <include reference="MVz-nw-yCS"/>
                                 <include reference="DRJ-aY-yYj"/>
                                 <include reference="WGh-jl-elP"/>
+                                <include reference="DLH-pE-ubo"/>
+                                <include reference="Kqb-7N-45Q"/>
+                                <include reference="1p8-b0-Igh"/>
+                                <include reference="Ipk-si-7eK"/>
+                                <include reference="nMQ-by-xyw"/>
                                 <include reference="7SH-Cm-CP1"/>
                                 <include reference="KXP-so-VVn"/>
                                 <include reference="UzL-Yw-0mA"/>
-                                <include reference="DLH-pE-ubo"/>
-                                <include reference="Kqb-7N-45Q"/>
-                                <include reference="hLG-yK-o44"/>
-                                <include reference="lkA-bA-4ID"/>
                                 <include reference="QIB-T9-Cme"/>
                                 <include reference="gUP-pB-vAx"/>
                                 <include reference="vUa-HP-kxH"/>
                                 <include reference="G2f-Ek-HZn"/>
                                 <include reference="NXU-k3-UTo"/>
+                                <include reference="hLG-yK-o44"/>
+                                <include reference="lkA-bA-4ID"/>
                                 <include reference="30q-pB-NZy"/>
                                 <include reference="Ab8-ui-qrs"/>
                                 <include reference="RJm-U8-9O7"/>
                                 <include reference="fb8-Vs-teJ"/>
+                                <include reference="HAG-KT-3VG"/>
+                                <include reference="Muf-Ib-x8H"/>
                                 <include reference="4rJ-y8-I70"/>
-                                <include reference="1p8-b0-Igh"/>
-                                <include reference="Ipk-si-7eK"/>
+                                <include reference="4f7-xe-zoB"/>
+                                <include reference="MVz-nw-yCS"/>
+                                <include reference="GfA-Xw-4wX"/>
+                                <include reference="lvy-By-pbu"/>
                                 <include reference="3jK-Ag-98H"/>
                                 <include reference="RCI-vM-RoO"/>
                                 <include reference="ta7-gb-C68"/>
-                                <include reference="HAG-KT-3VG"/>
-                                <include reference="Muf-Ib-x8H"/>
-                                <include reference="nMQ-by-xyw"/>
                             </mask>
                         </variation>
                     </view>
@@ -609,7 +608,7 @@
         <image name="stock-man" width="392" height="306"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9eN-yj-nJf"/>
-        <segue reference="dIK-MN-JsU"/>
+        <segue reference="x2W-dx-aOF"/>
+        <segue reference="Ewz-Z6-VdR"/>
     </inferredMetricsTieBreakers>
 </document>
