@@ -330,6 +330,7 @@
 				54B6B4591A73AD5100BF13FE /* LaunchScreen.xib in Resources */,
 				84CE88FC1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg in Resources */,
 				54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */,
+				84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */,
 				54B6B48F1A73D72600BF13FE /* InitiativeCollectionViewCell.xib in Resources */,
 				1168E2A11A73B5CB00F5B86C /* GoogleMaps.bundle in Resources */,
 			);
