@@ -265,6 +265,7 @@
 				844131D51A73D09F00DD56C7 /* README.txt */,
 			);
 			path = FacebookSDK;
+		};
 		54B6B48C1A73D64200BF13FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
