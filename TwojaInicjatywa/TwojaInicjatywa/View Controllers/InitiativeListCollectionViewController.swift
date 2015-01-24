@@ -8,8 +8,14 @@
 
 import UIKit
 
+@objc protocol InitiativeListCollectionViewControllerDelegate: NSObjectProtocol {
+    optional func initiativeListCollectionViewController(collectionViewController: UICollectionViewController, didSelectIdea idea: Idea)
+}
+
 class InitiativeListCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    weak var delegateIdeas: InitiativeListCollectionViewControllerDelegate?
+    
     var initiativeList: [Idea] = []
     
     override func viewDidLoad() {
@@ -70,6 +76,11 @@ class InitiativeListCollectionViewController: UICollectionViewController, UIColl
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        println("asda")
+        if let delegate = self.delegateIdeas {
+            if delegate.respondsToSelector(Selector("initiativeListCollectionViewController:didSelectIdea:")) {
+                let idea  = self.initiativeList[indexPath.item]
+                delegate.initiativeListCollectionViewController!(self, didSelectIdea: idea)
+            }
+        }
     }
 }
