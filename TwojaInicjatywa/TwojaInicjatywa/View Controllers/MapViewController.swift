@@ -88,12 +88,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             println("dziala: \(marker.title)")
             let nib = UINib(nibName: "InitiativeCollectionViewCell", bundle: nil)
             let view = nib.instantiateWithOwner(nil, options: nil)[0] as InitiativeCollectionViewCell
-            view.frame = CGRect(x: 0, y: self.view.frame.size.height, width: self.view.frame.width, height: 110)
+            view.frame = CGRect(x: 0, y: self.view.frame.size.height, width: self.view.frame.width, height: 66)
+            
+            let tapRecognizer = UITapGestureRecognizer(target: self, action: "didTapDetails:")
+            view.addGestureRecognizer(tapRecognizer)
+            
             self.view.addSubview(view)
+            
+            let idea = ideas[0]
+            
+            view.setName(idea.name)
+            view.setDistance("0.1 km")
+            view.setIcon(idea.photo!)
             
             self.mapMarkerDetailView = view
             UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.2, options: nil, animations: { () -> Void in
-                view.center.y -= 100.0
+                view.center.y -= 66
             }) { (finished) -> Void in
                 
             }
@@ -101,6 +111,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         }
         
         return true
+    }
+    
+    func didTapDetails(recognizer: UITapGestureRecognizer) {
+        self.performSegueWithIdentifier(MapToDetailsSegueIdentifier, sender: self)
+
     }
     
     
@@ -124,6 +139,5 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     {
         super.didReceiveMemoryWarning()
     }
-    
-    
+ 
 }
