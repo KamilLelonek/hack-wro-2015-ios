@@ -26,6 +26,10 @@ class ContainerViewController: UITabBarController {
         self.tabBar.removeFromSuperview()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
     private func _addProfileBarButtonItem() {
         self.navigationItem.leftBarButtonItem  = UIBarButtonItem(image:UIImage(named: "profile_icon"), style: UIBarButtonItemStyle.Plain, target: self, action:  Selector("_didTapShowProfile:"))
     }
