@@ -11,7 +11,7 @@ import UIKit
 let InitiativeToDetailsSegueIdentifier = "InitiativeToDetails"
 let InitiativeListToAddInitiativeSegueIdentifier = "InitiativeListToAddInitiative"
 
-class InitiativeListViewController: UIViewController {
+class InitiativeListViewController: UIViewController, InitiativeListCollectionViewControllerDelegate {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
@@ -29,4 +29,17 @@ class InitiativeListViewController: UIViewController {
         self.performSegueWithIdentifier(InitiativeListToAddInitiativeSegueIdentifier, sender: sender)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "collectionViewEmbeded" {
+            let cvc = segue.destinationViewController as InitiativeListCollectionViewController
+            cvc.delegateIdeas = self
+            
+        } else if segue.identifier == InitiativeToDetailsSegueIdentifier {
+            let vc = segue.destinationViewController as InitiativeDetailsViewController
+        }
+    }
+    
+    func initiativeListCollectionViewController(collectionViewController: UICollectionViewController, didSelectIdea idea: Idea) {
+        self.performSegueWithIdentifier(InitiativeToDetailsSegueIdentifier, sender: self)
+    }
 }

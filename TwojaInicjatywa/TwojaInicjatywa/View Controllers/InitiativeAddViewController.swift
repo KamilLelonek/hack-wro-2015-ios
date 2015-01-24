@@ -33,6 +33,7 @@ class InitiativeAddViewController: UIViewController {
         super.viewDidLoad()
         
         
+        
     
   //      var newIdea: Idea = Idea(coordinates: ideaCoordinate, name: ideaName)
         

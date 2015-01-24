@@ -22,9 +22,11 @@ class Profile {
         self.password = password
     }
     
-    func upVotes() {
-//        addedIdeas.reduce(0) { $0 + $1 }
+    func upVotes() -> Int {
+        return addedIdeas.reduce(0) { $0 + $1.rank.upVotes }
     }
     
-    func downVotes() {}
+    func downVotes() -> Int {
+        return addedIdeas.reduce(0) { $0 + $1.rank.downVotes }
+    }
 }

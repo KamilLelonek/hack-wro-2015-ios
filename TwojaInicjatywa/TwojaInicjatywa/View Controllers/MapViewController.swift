@@ -13,30 +13,27 @@ import CoreLocation
 let MapToDetailsSegueIdentifier = "MapToDetails"
 let MapToAddInitiativeSegueIdentifier = "MapToAddInitiative"
 
-class MapViewController: UIViewController, CLLocationManagerDelegate
+class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate
 {
     
     @IBOutlet weak var mapView: GMSMapView!
     let locationManager = CLLocationManager()
     var ideas: [Idea] = []
-    
+    var mapMarkerDetailView: InitiativeCollectionViewCell?
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        var idea1 = Idea(coordinates: CLLocationCoordinate2DMake(51.1220568429801, 17.0339102902900), name: "zbudować kościół")
-        var idea2 = Idea(coordinates: CLLocationCoordinate2DMake(51.1220568429222, 17.0339902903400), name: "postawić burdel")
+        ideas = sharedIdeas()
         
-        ideas.append(idea1)
-        ideas.append(idea2)
-
         println(ideas)
         
         var camera = GMSCameraPosition.cameraWithLatitude(51.09168, longitude:17.04015, zoom:14)
         mapView.camera = camera
         mapView.settings.myLocationButton = true
         mapView.myLocationEnabled = true
+        mapView.delegate = self
         
         for idea in ideas
         {
@@ -44,8 +41,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate
             marker.title = idea.name
             marker.map = mapView
         }
-        
-        
         
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
@@ -84,6 +79,46 @@ class MapViewController: UIViewController, CLLocationManagerDelegate
         }
     }
 
+    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool
+    {
+        if let view = self.mapMarkerDetailView
+        {
+            
+        } else {
+            println("dziala: \(marker.title)")
+            let nib = UINib(nibName: "InitiativeCollectionViewCell", bundle: nil)
+            let view = nib.instantiateWithOwner(nil, options: nil)[0] as InitiativeCollectionViewCell
+            view.frame = CGRect(x: 0, y: self.view.frame.size.height, width: self.view.frame.width, height: 110)
+            self.view.addSubview(view)
+            
+            self.mapMarkerDetailView = view
+            UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.2, options: nil, animations: { () -> Void in
+                view.center.y -= 100.0
+            }) { (finished) -> Void in
+                
+            }
+        
+        }
+        
+        return true
+    }
+    
+    
+    func mapView(mapView: GMSMapView!, didTapAtCoordinate coordinate: CLLocationCoordinate2D)
+    {
+        println("wcisnieta koordynata")
+        if let view = self.mapMarkerDetailView
+        {
+            UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.2, options: nil, animations: { () -> Void in
+                view.center.y += 100.0
+                }) { (finished) -> Void in
+                    self.mapMarkerDetailView?.removeFromSuperview()
+                    self.mapMarkerDetailView = nil
+            }
+            
+        }
+    }
+    
     
     override func didReceiveMemoryWarning()
     {
