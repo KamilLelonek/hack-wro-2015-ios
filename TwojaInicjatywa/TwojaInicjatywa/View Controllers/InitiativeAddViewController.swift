@@ -8,14 +8,36 @@
 
 import UIKit
 
+
+
 class InitiativeAddViewController: UIViewController {
+
+    var ideaCoordinate: CLLocationCoordinate2D
+    var ideaName: String
+    
+    init(ideaCoordinate: CLLocationCoordinate2D, ideaName: String){
+    
+        self.ideaCoordinate = ideaCoordinate
+        self.ideaName = ideaName
+        
+        super.init()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+    
+        var newIdea: Idea = Idea(coordinates: ideaCoordinate, name: ideaName)
         
-        newIdea: Idea
+        
+        
         
     }
 }
