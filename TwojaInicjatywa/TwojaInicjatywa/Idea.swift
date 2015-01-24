@@ -12,14 +12,16 @@ import CoreLocation
 
 class Idea{
     var coordinates : CLLocationCoordinate2D
+    var name: String
     var comments: [String]?
     var rank = (pro : 0, con : 0)
     var photo : UIImage?
     
     
-    init( coordinates: CLLocationCoordinate2D){
+    init( coordinates: CLLocationCoordinate2D, name: String){
     
         self.coordinates = coordinates
+        self.name = name
     }
     
 }
