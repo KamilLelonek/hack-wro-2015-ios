@@ -14,12 +14,8 @@
 		54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4551A73AD5100BF13FE /* Images.xcassets */; };
 		54B6B4591A73AD5100BF13FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4571A73AD5100BF13FE /* LaunchScreen.xib */; };
 		54B6B4651A73AD5100BF13FE /* TwojaInicjatywaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */; };
-		54B6B46F1A73AEE500BF13FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B46E1A73AEE500BF13FE /* MapViewController.swift */; };
-		54B6B4711A73AEF400BF13FE /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4701A73AEF400BF13FE /* ContainerViewController.swift */; };
-		54B6B4741A73B0B800BF13FE /* InitiativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4731A73B0B800BF13FE /* InitiativeDetailsViewController.swift */; };
-		54B6B4761A73B0E400BF13FE /* InitiativeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4751A73B0E400BF13FE /* InitiativeListViewController.swift */; };
-		54B6B4781A73B16300BF13FE /* InitiativeAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4771A73B16300BF13FE /* InitiativeAddViewController.swift */; };
-		54B6B47A1A73B2E800BF13FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4791A73B2E800BF13FE /* ProfileViewController.swift */; };
+		9FC2218E1A73B4B900836590 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218D1A73B4B900836590 /* Profile.swift */; };
+		9FC221901A73B55400836590 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218F1A73B55400836590 /* Idea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +41,8 @@
 		54B6B45E1A73AD5100BF13FE /* TwojaInicjatywaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwojaInicjatywaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B6B4631A73AD5100BF13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwojaInicjatywaTests.swift; sourceTree = "<group>"; };
-		54B6B46E1A73AEE500BF13FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "View Controllers/MapViewController.swift"; sourceTree = "<group>"; };
-		54B6B4701A73AEF400BF13FE /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerViewController.swift; path = "View Controllers/ContainerViewController.swift"; sourceTree = "<group>"; };
-		54B6B4731A73B0B800BF13FE /* InitiativeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeDetailsViewController.swift; path = "View Controllers/InitiativeDetailsViewController.swift"; sourceTree = "<group>"; };
-		54B6B4751A73B0E400BF13FE /* InitiativeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeListViewController.swift; path = "View Controllers/InitiativeListViewController.swift"; sourceTree = "<group>"; };
-		54B6B4771A73B16300BF13FE /* InitiativeAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeAddViewController.swift; path = "View Controllers/InitiativeAddViewController.swift"; sourceTree = "<group>"; };
-		54B6B4791A73B2E800BF13FE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "View Controllers/ProfileViewController.swift"; sourceTree = "<group>"; };
+		9FC2218D1A73B4B900836590 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9FC2218F1A73B55400836590 /* Idea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				54B6B44E1A73AD5100BF13FE /* AppDelegate.swift */,
-				54B6B4721A73AEFB00BF13FE /* View Controllers */,
+				54B6B4501A73AD5100BF13FE /* ViewController.swift */,
+				9FC221931A73BA6D00836590 /* Model */,
 				54B6B4521A73AD5100BF13FE /* Main.storyboard */,
 				54B6B4551A73AD5100BF13FE /* Images.xcassets */,
 				54B6B4571A73AD5100BF13FE /* LaunchScreen.xib */,
@@ -139,17 +132,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		54B6B4721A73AEFB00BF13FE /* View Controllers */ = {
+		9FC221931A73BA6D00836590 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				54B6B4701A73AEF400BF13FE /* ContainerViewController.swift */,
-				54B6B46E1A73AEE500BF13FE /* MapViewController.swift */,
-				54B6B4731A73B0B800BF13FE /* InitiativeDetailsViewController.swift */,
-				54B6B4751A73B0E400BF13FE /* InitiativeListViewController.swift */,
-				54B6B4771A73B16300BF13FE /* InitiativeAddViewController.swift */,
-				54B6B4791A73B2E800BF13FE /* ProfileViewController.swift */,
+				9FC2218D1A73B4B900836590 /* Profile.swift */,
+				9FC2218F1A73B55400836590 /* Idea.swift */,
 			);
-			name = "View Controllers";
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B6B4781A73B16300BF13FE /* InitiativeAddViewController.swift in Sources */,
-				54B6B46F1A73AEE500BF13FE /* MapViewController.swift in Sources */,
-				54B6B4711A73AEF400BF13FE /* ContainerViewController.swift in Sources */,
+				9FC221901A73B55400836590 /* Idea.swift in Sources */,
+				54B6B4511A73AD5100BF13FE /* ViewController.swift in Sources */,
+				9FC2218E1A73B4B900836590 /* Profile.swift in Sources */,
 				54B6B44F1A73AD5100BF13FE /* AppDelegate.swift in Sources */,
 				54B6B47A1A73B2E800BF13FE /* ProfileViewController.swift in Sources */,
 				54B6B4741A73B0B800BF13FE /* InitiativeDetailsViewController.swift in Sources */,
