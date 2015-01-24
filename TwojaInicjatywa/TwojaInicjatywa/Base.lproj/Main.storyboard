@@ -411,7 +411,7 @@
                                     <constraint firstAttribute="height" constant="79" id="iry-2M-7tU"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Inicjatywy:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ux-jo-8so">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicjatywy:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ux-jo-8so">
                                 <rect key="frame" x="16" y="288" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -448,6 +448,7 @@
                             <constraint firstAttribute="centerX" secondItem="wgT-ff-BfN" secondAttribute="centerX" constant="-100" id="mji-bL-3Xu"/>
                             <constraint firstAttribute="centerX" secondItem="eUe-oS-vp8" secondAttribute="centerX" id="nzt-MO-HYa"/>
                             <constraint firstItem="eUe-oS-vp8" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="144" id="pNm-YO-vRu"/>
+                            <constraint firstItem="B66-mp-g11" firstAttribute="top" secondItem="9ux-jo-8so" secondAttribute="bottom" constant="6" id="sbk-Gh-9wP"/>
                             <constraint firstItem="6TE-9x-gS1" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="131" id="t3d-vQ-MRI"/>
                             <constraint firstAttribute="centerX" secondItem="v8F-Cr-EM4" secondAttribute="centerX" id="xWz-jj-nxz"/>
                             <constraint firstAttribute="centerX" secondItem="BJn-A4-DlJ" secondAttribute="centerX" constant="130" id="yV5-Uz-bM1"/>
