@@ -13,6 +13,8 @@
 		54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4551A73AD5100BF13FE /* Images.xcassets */; };
 		54B6B4591A73AD5100BF13FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4571A73AD5100BF13FE /* LaunchScreen.xib */; };
 		54B6B4651A73AD5100BF13FE /* TwojaInicjatywaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */; };
+		9FC2218E1A73B4B900836590 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218D1A73B4B900836590 /* Profile.swift */; };
+		9FC221901A73B55400836590 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218F1A73B55400836590 /* Idea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		54B6B45E1A73AD5100BF13FE /* TwojaInicjatywaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwojaInicjatywaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B6B4631A73AD5100BF13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwojaInicjatywaTests.swift; sourceTree = "<group>"; };
+		9FC2218D1A73B4B900836590 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9FC2218F1A73B55400836590 /* Idea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				54B6B44E1A73AD5100BF13FE /* AppDelegate.swift */,
 				54B6B4501A73AD5100BF13FE /* ViewController.swift */,
+				9FC221931A73BA6D00836590 /* Model */,
 				54B6B4521A73AD5100BF13FE /* Main.storyboard */,
 				54B6B4551A73AD5100BF13FE /* Images.xcassets */,
 				54B6B4571A73AD5100BF13FE /* LaunchScreen.xib */,
@@ -110,6 +115,15 @@
 				54B6B4631A73AD5100BF13FE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FC221931A73BA6D00836590 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2218D1A73B4B900836590 /* Profile.swift */,
+				9FC2218F1A73B55400836590 /* Idea.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC221901A73B55400836590 /* Idea.swift in Sources */,
 				54B6B4511A73AD5100BF13FE /* ViewController.swift in Sources */,
+				9FC2218E1A73B4B900836590 /* Profile.swift in Sources */,
 				54B6B44F1A73AD5100BF13FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +421,7 @@
 				54B6B46A1A73AD5100BF13FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54B6B46B1A73AD5100BF13FE /* Build configuration list for PBXNativeTarget "TwojaInicjatywaTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				54B6B46D1A73AD5100BF13FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
