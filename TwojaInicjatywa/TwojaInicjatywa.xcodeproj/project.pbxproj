@@ -9,19 +9,33 @@
 /* Begin PBXBuildFile section */
 		1168E29F1A73B5A900F5B86C /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E29E1A73B5A900F5B86C /* GoogleMaps.framework */; };
 		1168E2A11A73B5CB00F5B86C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1168E2A01A73B5CB00F5B86C /* GoogleMaps.bundle */; };
+		1168E2A81A73BD3600F5B86C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2A71A73BD3600F5B86C /* AVFoundation.framework */; };
+		1168E2AA1A73BD3F00F5B86C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2A91A73BD3F00F5B86C /* CoreLocation.framework */; };
+		1168E2AC1A73BD4900F5B86C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2AB1A73BD4900F5B86C /* CoreData.framework */; };
+		1168E2AE1A73BD5200F5B86C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2AD1A73BD5200F5B86C /* CoreText.framework */; };
+		1168E2B01A73BD5800F5B86C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2AF1A73BD5800F5B86C /* GLKit.framework */; };
+		1168E2B21A73BD6100F5B86C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2B11A73BD6100F5B86C /* ImageIO.framework */; };
+		1168E2B41A73BD7400F5B86C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2B31A73BD7400F5B86C /* libc++.dylib */; };
+		1168E2B61A73BD9200F5B86C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2B51A73BD9200F5B86C /* libicucore.dylib */; };
+		1168E2B81A73BD9E00F5B86C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2B71A73BD9E00F5B86C /* libz.dylib */; };
+		1168E2BA1A73BDA700F5B86C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2B91A73BDA700F5B86C /* OpenGLES.framework */; };
+		1168E2BC1A73BDB600F5B86C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2BB1A73BDB600F5B86C /* QuartzCore.framework */; };
+		1168E2BE1A73BDC000F5B86C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1168E2BD1A73BDC000F5B86C /* SystemConfiguration.framework */; };
 		54B6B44F1A73AD5100BF13FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B44E1A73AD5100BF13FE /* AppDelegate.swift */; };
 		54B6B4541A73AD5100BF13FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4521A73AD5100BF13FE /* Main.storyboard */; };
 		54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4551A73AD5100BF13FE /* Images.xcassets */; };
 		54B6B4591A73AD5100BF13FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4571A73AD5100BF13FE /* LaunchScreen.xib */; };
 		54B6B4651A73AD5100BF13FE /* TwojaInicjatywaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */; };
-		54B6B46F1A73AEE500BF13FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B46E1A73AEE500BF13FE /* MapViewController.swift */; };
-		54B6B4711A73AEF400BF13FE /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4701A73AEF400BF13FE /* ContainerViewController.swift */; };
-		54B6B4741A73B0B800BF13FE /* InitiativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4731A73B0B800BF13FE /* InitiativeDetailsViewController.swift */; };
-		54B6B4761A73B0E400BF13FE /* InitiativeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4751A73B0E400BF13FE /* InitiativeListViewController.swift */; };
-		54B6B4781A73B16300BF13FE /* InitiativeAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4771A73B16300BF13FE /* InitiativeAddViewController.swift */; };
-		54B6B47A1A73B2E800BF13FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4791A73B2E800BF13FE /* ProfileViewController.swift */; };
 		84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88F91A73B9E700F83619 /* Login.storyboard */; };
 		84CE88FC1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */; };
+		54B6B4821A73C0CF00BF13FE /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47C1A73C0CF00BF13FE /* ContainerViewController.swift */; };
+		54B6B4831A73C0CF00BF13FE /* InitiativeAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47D1A73C0CF00BF13FE /* InitiativeAddViewController.swift */; };
+		54B6B4841A73C0CF00BF13FE /* InitiativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47E1A73C0CF00BF13FE /* InitiativeDetailsViewController.swift */; };
+		54B6B4851A73C0CF00BF13FE /* InitiativeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47F1A73C0CF00BF13FE /* InitiativeListViewController.swift */; };
+		54B6B4861A73C0CF00BF13FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4801A73C0CF00BF13FE /* MapViewController.swift */; };
+		54B6B4871A73C0CF00BF13FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4811A73C0CF00BF13FE /* ProfileViewController.swift */; };
+		9FC2218E1A73B4B900836590 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218D1A73B4B900836590 /* Profile.swift */; };
+		9FC221901A73B55400836590 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218F1A73B55400836590 /* Idea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +52,18 @@
 		1168E29E1A73B5A900F5B86C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		1168E2A01A73B5CB00F5B86C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		1168E2A31A73B67400F5B86C /* TwojaInicjatywa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwojaInicjatywa-Bridging-Header.h"; sourceTree = "<group>"; };
+		1168E2A71A73BD3600F5B86C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1168E2A91A73BD3F00F5B86C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1168E2AB1A73BD4900F5B86C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1168E2AD1A73BD5200F5B86C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1168E2AF1A73BD5800F5B86C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1168E2B11A73BD6100F5B86C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		1168E2B31A73BD7400F5B86C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		1168E2B51A73BD9200F5B86C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		1168E2B71A73BD9E00F5B86C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1168E2B91A73BDA700F5B86C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1168E2BB1A73BDB600F5B86C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1168E2BD1A73BDC000F5B86C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		54B6B4491A73AD5100BF13FE /* TwojaInicjatywa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwojaInicjatywa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B6B44D1A73AD5100BF13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B6B44E1A73AD5100BF13FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,14 +73,16 @@
 		54B6B45E1A73AD5100BF13FE /* TwojaInicjatywaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwojaInicjatywaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B6B4631A73AD5100BF13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwojaInicjatywaTests.swift; sourceTree = "<group>"; };
-		54B6B46E1A73AEE500BF13FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "View Controllers/MapViewController.swift"; sourceTree = "<group>"; };
-		54B6B4701A73AEF400BF13FE /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerViewController.swift; path = "View Controllers/ContainerViewController.swift"; sourceTree = "<group>"; };
-		54B6B4731A73B0B800BF13FE /* InitiativeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeDetailsViewController.swift; path = "View Controllers/InitiativeDetailsViewController.swift"; sourceTree = "<group>"; };
-		54B6B4751A73B0E400BF13FE /* InitiativeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeListViewController.swift; path = "View Controllers/InitiativeListViewController.swift"; sourceTree = "<group>"; };
-		54B6B4771A73B16300BF13FE /* InitiativeAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeAddViewController.swift; path = "View Controllers/InitiativeAddViewController.swift"; sourceTree = "<group>"; };
-		54B6B4791A73B2E800BF13FE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "View Controllers/ProfileViewController.swift"; sourceTree = "<group>"; };
 		84CE88F91A73B9E700F83619 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "facebook-ios-sdk-3.22.pkg"; sourceTree = "<group>"; };
+		54B6B47C1A73C0CF00BF13FE /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		54B6B47D1A73C0CF00BF13FE /* InitiativeAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeAddViewController.swift; sourceTree = "<group>"; };
+		54B6B47E1A73C0CF00BF13FE /* InitiativeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeDetailsViewController.swift; sourceTree = "<group>"; };
+		54B6B47F1A73C0CF00BF13FE /* InitiativeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeListViewController.swift; sourceTree = "<group>"; };
+		54B6B4801A73C0CF00BF13FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		54B6B4811A73C0CF00BF13FE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9FC2218D1A73B4B900836590 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9FC2218F1A73B55400836590 /* Idea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +90,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1168E2BE1A73BDC000F5B86C /* SystemConfiguration.framework in Frameworks */,
+				1168E2BC1A73BDB600F5B86C /* QuartzCore.framework in Frameworks */,
+				1168E2BA1A73BDA700F5B86C /* OpenGLES.framework in Frameworks */,
+				1168E2B81A73BD9E00F5B86C /* libz.dylib in Frameworks */,
+				1168E2B61A73BD9200F5B86C /* libicucore.dylib in Frameworks */,
+				1168E2B41A73BD7400F5B86C /* libc++.dylib in Frameworks */,
+				1168E2B21A73BD6100F5B86C /* ImageIO.framework in Frameworks */,
+				1168E2B01A73BD5800F5B86C /* GLKit.framework in Frameworks */,
+				1168E2AE1A73BD5200F5B86C /* CoreText.framework in Frameworks */,
+				1168E2AC1A73BD4900F5B86C /* CoreData.framework in Frameworks */,
+				1168E2AA1A73BD3F00F5B86C /* CoreLocation.framework in Frameworks */,
+				1168E2A81A73BD3600F5B86C /* AVFoundation.framework in Frameworks */,
 				1168E29F1A73B5A900F5B86C /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +120,18 @@
 			isa = PBXGroup;
 			children = (
 				84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */,
+				1168E2BD1A73BDC000F5B86C /* SystemConfiguration.framework */,
+				1168E2BB1A73BDB600F5B86C /* QuartzCore.framework */,
+				1168E2B91A73BDA700F5B86C /* OpenGLES.framework */,
+				1168E2B71A73BD9E00F5B86C /* libz.dylib */,
+				1168E2B51A73BD9200F5B86C /* libicucore.dylib */,
+				1168E2B31A73BD7400F5B86C /* libc++.dylib */,
+				1168E2B11A73BD6100F5B86C /* ImageIO.framework */,
+				1168E2AF1A73BD5800F5B86C /* GLKit.framework */,
+				1168E2AD1A73BD5200F5B86C /* CoreText.framework */,
+				1168E2AB1A73BD4900F5B86C /* CoreData.framework */,
+				1168E2A91A73BD3F00F5B86C /* CoreLocation.framework */,
+				1168E2A71A73BD3600F5B86C /* AVFoundation.framework */,
 				1168E2A01A73B5CB00F5B86C /* GoogleMaps.bundle */,
 				1168E29E1A73B5A900F5B86C /* GoogleMaps.framework */,
 			);
@@ -108,7 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				54B6B44E1A73AD5100BF13FE /* AppDelegate.swift */,
-				54B6B4721A73AEFB00BF13FE /* View Controllers */,
+				54B6B47B1A73C0CF00BF13FE /* View Controllers */,
+				9FC221931A73BA6D00836590 /* Model */,
 				54B6B4521A73AD5100BF13FE /* Main.storyboard */,
 				84CE88F91A73B9E700F83619 /* Login.storyboard */,
 				54B6B4551A73AD5100BF13FE /* Images.xcassets */,
@@ -145,17 +198,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		54B6B4721A73AEFB00BF13FE /* View Controllers */ = {
+		54B6B47B1A73C0CF00BF13FE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				54B6B4701A73AEF400BF13FE /* ContainerViewController.swift */,
-				54B6B46E1A73AEE500BF13FE /* MapViewController.swift */,
-				54B6B4731A73B0B800BF13FE /* InitiativeDetailsViewController.swift */,
-				54B6B4751A73B0E400BF13FE /* InitiativeListViewController.swift */,
-				54B6B4771A73B16300BF13FE /* InitiativeAddViewController.swift */,
-				54B6B4791A73B2E800BF13FE /* ProfileViewController.swift */,
+				54B6B47C1A73C0CF00BF13FE /* ContainerViewController.swift */,
+				54B6B47D1A73C0CF00BF13FE /* InitiativeAddViewController.swift */,
+				54B6B47E1A73C0CF00BF13FE /* InitiativeDetailsViewController.swift */,
+				54B6B47F1A73C0CF00BF13FE /* InitiativeListViewController.swift */,
+				54B6B4801A73C0CF00BF13FE /* MapViewController.swift */,
+				54B6B4811A73C0CF00BF13FE /* ProfileViewController.swift */,
 			);
-			name = "View Controllers";
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9FC221931A73BA6D00836590 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2218D1A73B4B900836590 /* Profile.swift */,
+				9FC2218F1A73B55400836590 /* Idea.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,13 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B6B4781A73B16300BF13FE /* InitiativeAddViewController.swift in Sources */,
-				54B6B46F1A73AEE500BF13FE /* MapViewController.swift in Sources */,
-				54B6B4711A73AEF400BF13FE /* ContainerViewController.swift in Sources */,
+				54B6B4831A73C0CF00BF13FE /* InitiativeAddViewController.swift in Sources */,
+				54B6B4851A73C0CF00BF13FE /* InitiativeListViewController.swift in Sources */,
+				9FC221901A73B55400836590 /* Idea.swift in Sources */,
+				9FC2218E1A73B4B900836590 /* Profile.swift in Sources */,
+				54B6B4821A73C0CF00BF13FE /* ContainerViewController.swift in Sources */,
 				54B6B44F1A73AD5100BF13FE /* AppDelegate.swift in Sources */,
-				54B6B47A1A73B2E800BF13FE /* ProfileViewController.swift in Sources */,
-				54B6B4741A73B0B800BF13FE /* InitiativeDetailsViewController.swift in Sources */,
-				54B6B4761A73B0E400BF13FE /* InitiativeListViewController.swift in Sources */,
+				54B6B4871A73C0CF00BF13FE /* ProfileViewController.swift in Sources */,
+				54B6B4841A73C0CF00BF13FE /* InitiativeDetailsViewController.swift in Sources */,
+				54B6B4861A73C0CF00BF13FE /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
