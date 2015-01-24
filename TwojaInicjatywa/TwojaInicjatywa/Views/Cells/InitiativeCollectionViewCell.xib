@@ -7,24 +7,51 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InitiativeCollectionViewCell" id="e6T-xh-FFi" customClass="InitiativeCollectionViewCell" customModule="TwojaInicjatywa" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="273" height="97"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="273" height="97"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOB-wf-e6U">
-                        <rect key="frame" x="38" y="8" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOB-wf-e6U">
+                        <rect key="frame" x="69" y="13" width="46.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="43g-0p-eRk">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="O0h-8x-8iE"/>
+                            <constraint firstAttribute="width" constant="50" id="gHA-bt-cZV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,2 km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIQ-A7-F5b">
+                        <rect key="frame" x="69" y="33" width="52.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <size key="customSize" width="273" height="97"/>
-            <point key="canvasLocation" x="166.5" y="166.5"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="43g-0p-eRk" secondAttribute="centerY" id="1hf-hQ-XpM"/>
+                <constraint firstItem="TOB-wf-e6U" firstAttribute="leading" secondItem="LIQ-A7-F5b" secondAttribute="leading" id="393-hg-7fw"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TOB-wf-e6U" secondAttribute="trailing" constant="12" id="HfV-ic-jjx"/>
+                <constraint firstItem="TOB-wf-e6U" firstAttribute="leading" secondItem="43g-0p-eRk" secondAttribute="trailing" constant="11" id="So0-qp-fDO"/>
+                <constraint firstItem="LIQ-A7-F5b" firstAttribute="top" secondItem="TOB-wf-e6U" secondAttribute="bottom" id="XSJ-N9-6Z1"/>
+                <constraint firstItem="TOB-wf-e6U" firstAttribute="top" secondItem="e6T-xh-FFi" secondAttribute="top" constant="13" id="XSx-Rq-azQ"/>
+                <constraint firstItem="43g-0p-eRk" firstAttribute="leading" secondItem="e6T-xh-FFi" secondAttribute="leading" constant="8" id="tlK-SU-CLr"/>
+            </constraints>
+            <size key="customSize" width="317" height="94"/>
+            <connections>
+                <outlet property="distanceLabel" destination="LIQ-A7-F5b" id="K7H-zX-fyk"/>
+                <outlet property="iconView" destination="43g-0p-eRk" id="XGL-qd-Ahb"/>
+                <outlet property="nameLabel" destination="TOB-wf-e6U" id="pgk-Ab-Mql"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="164.5"/>
         </collectionViewCell>
     </objects>
 </document>

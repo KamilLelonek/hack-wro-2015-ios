@@ -46,6 +46,6 @@ class InitiativeListCollectionViewController: UICollectionViewController, UIColl
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.size.width - 24.0, height: 64.0)
+        return CGSize(width: self.view.frame.size.width - 10.0, height: 66.0)
     }
 }
