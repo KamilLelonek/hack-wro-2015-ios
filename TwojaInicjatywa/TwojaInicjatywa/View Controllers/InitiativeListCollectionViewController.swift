@@ -10,6 +10,8 @@ import UIKit
 
 class InitiativeListCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    var initiativeList: [Idea] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,15 @@ class InitiativeListCollectionViewController: UICollectionViewController, UIColl
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let idea1 = Idea(coordinates: CLLocationCoordinate2D(latitude: 45.0, longitude: 23.0), name: "Moja inicjacja")
+        idea1.photo = UIImage(named: "city_placeholder")
+        
+        let idea2 = Idea(coordinates: CLLocationCoordinate2D(latitude: 50.0, longitude: 23.0), name: "Chcę kościół")
+        idea2.photo = UIImage(named: "city_placeholder")
+        
+        self.initiativeList.append(idea1)
+        self.initiativeList.append(idea2)
         
         let cellNib = UINib(nibName: "InitiativeCollectionViewCell", bundle: nil)
         self.collectionView?.registerNib(cellNib, forCellWithReuseIdentifier: "InitiativeCollectionViewCell")
@@ -35,15 +46,20 @@ class InitiativeListCollectionViewController: UICollectionViewController, UIColl
     }
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return self.initiativeList.count
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("InitiativeCollectionViewCell", forIndexPath: indexPath) as InitiativeCollectionViewCell
         
-        cell.setIcon(UIImage(named: "city_placeholder")!)
-        cell.setName("Moja nazwa inicjatywy")
+        let initiative = self.initiativeList[indexPath.item]
+        
+        if let icon = initiative.photo {
+            cell.setIcon(icon)
+        }
+        
+        cell.setName(initiative.name)
         cell.setDistance("0.312 km")
         
         return cell
