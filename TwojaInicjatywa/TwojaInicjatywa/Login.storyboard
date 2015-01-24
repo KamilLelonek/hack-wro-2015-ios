@@ -10,7 +10,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="eK0-V1-hIZ">
             <objects>
-                <viewController id="eNc-oM-ioq" customClass="SignUpViewController" sceneMemberID="viewController">
+                <viewController id="eNc-oM-ioq" customClass="SignUpViewController" customModule="TwojaInicjatywa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aHQ-Pv-r47"/>
                         <viewControllerLayoutGuide type="bottom" id="TOk-2U-hyA"/>
@@ -39,6 +39,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupButtonPressed:" destination="eNc-oM-ioq" eventType="touchUpInside" id="SNk-Zd-Xfe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPP-IF-Qhj">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -330,6 +333,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="Skr-XY-lYL"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="4oD-P4-Qwi" id="aoZ-SC-Iv6"/>
+                        <outlet property="facebookLoginButton" destination="0pG-aH-f90" id="wJR-3B-fn0"/>
+                        <outlet property="passwordTextField" destination="WpQ-qI-uaR" id="Wui-0k-e2Z"/>
+                        <outlet property="usernameTextField" destination="urr-Hv-sNI" id="eE4-9h-79a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ir6-eW-cj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,7 +347,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="bne-ka-2qw">
             <objects>
-                <viewController id="L0R-sV-4u8" customClass="SignInViewController" sceneMemberID="viewController">
+                <viewController id="L0R-sV-4u8" customClass="SignInViewController" customModule="TwojaInicjatywa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g3J-Cd-nQP"/>
                         <viewControllerLayoutGuide type="bottom" id="Tfg-gQ-qXd"/>
@@ -388,6 +397,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signinButtonTouched:" destination="L0R-sV-4u8" eventType="touchUpInside" id="fF7-vc-JHc"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5B9-Eb-UFM">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -470,6 +482,10 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="Wbz-Ub-dyI" id="wo7-XA-gF4"/>
+                        <outlet property="passwordTextField" destination="Qbh-WY-lrl" id="jlD-ga-BLu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1m-tN-T5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
