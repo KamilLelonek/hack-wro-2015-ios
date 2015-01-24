@@ -157,6 +157,9 @@
 		1168E2A21A73B5D200F5B86C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				844133B11A73D26B00DD56C7 /* CoreMotion.framework */,
+				844133AF1A73D25F00DD56C7 /* CoreMedia.framework */,
+				844133AD1A73D23300DD56C7 /* AdSupport.framework */,
 				9F96F7D21A73E8DE000C34CB /* FacebookSDK */,
 				1168E2BD1A73BDC000F5B86C /* SystemConfiguration.framework */,
 				1168E2BB1A73BDB600F5B86C /* QuartzCore.framework */,
@@ -179,9 +182,6 @@
 		54B6B4401A73AD5100BF13FE = {
 			isa = PBXGroup;
 			children = (
-				844133B11A73D26B00DD56C7 /* CoreMotion.framework */,
-				844133AF1A73D25F00DD56C7 /* CoreMedia.framework */,
-				844133AD1A73D23300DD56C7 /* AdSupport.framework */,
 				54B6B44B1A73AD5100BF13FE /* TwojaInicjatywa */,
 				54B6B4611A73AD5100BF13FE /* TwojaInicjatywaTests */,
 				54B6B44A1A73AD5100BF13FE /* Products */,
