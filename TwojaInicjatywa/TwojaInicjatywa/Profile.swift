@@ -9,14 +9,22 @@
 import Foundation
 
 
-class Profile{
-
-    let user : String
-    var addedIdeas : [Idea]?
-    var upVotes = (pro : 0 , con : 0)
+class Profile {
+    let fullName: String
+    let email:    String
+    let password: String
     
-    init( user: String){
+    var addedIdeas: [Idea] = []
     
-        self.user = user
+    init(fullName: String, email: String, password: String) {
+        self.fullName = fullName
+        self.email    = email
+        self.password = password
     }
+    
+    func upVotes() {
+//        addedIdeas.reduce(0) { $0 + $1 }
+    }
+    
+    func downVotes() {}
 }
