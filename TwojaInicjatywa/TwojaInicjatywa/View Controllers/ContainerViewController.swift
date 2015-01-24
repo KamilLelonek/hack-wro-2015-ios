@@ -22,6 +22,13 @@ class ContainerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func showMapViewController() {
+        
+    }
+    
+    func showInitiativeListViewController() {
+        
+    }
 
 }
 

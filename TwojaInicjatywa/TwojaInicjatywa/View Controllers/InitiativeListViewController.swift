@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Cohesiva. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 let InitiativeToDetailsSegueIdentifier = "InitiativeToDetails"
 let InitiativeListToAddInitiativeSegueIdentifier = "InitiativeListToAddInitiative"
