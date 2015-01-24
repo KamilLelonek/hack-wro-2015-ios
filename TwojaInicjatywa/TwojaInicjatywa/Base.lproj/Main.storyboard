@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KOr-lm-JBl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="APu-1S-51g">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -66,7 +66,7 @@
                                     <rect key="frame" x="60" y="52" width="280" height="556"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budka z hot-dogami" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYf-lj-cTh">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Budka z hot-dogami" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYf-lj-cTh">
                                             <rect key="frame" x="119" y="272" width="42" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="216" id="tY3-zo-wzN"/>
@@ -85,7 +85,7 @@
                                                 </mask>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsa-c9-Wqf">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="+2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsa-c9-Wqf">
                                             <rect key="frame" x="36" y="299" width="11" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -94,7 +94,7 @@
                                                 <rect key="frame" x="36" y="299" width="40" height="21"/>
                                             </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13 - " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mou-tS-FVf">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="13 - " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mou-tS-FVf">
                                             <rect key="frame" x="236" y="299" width="7" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -109,7 +109,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="image_test" translatesAutoresizingMaskIntoConstraints="NO" id="pvo-zo-Img">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="image_test" translatesAutoresizingMaskIntoConstraints="NO" id="pvo-zo-Img">
                                             <rect key="frame" x="20" y="20" width="240" height="239"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="240" id="Gvo-Tg-vjd"/>
@@ -171,9 +171,9 @@
                                             <exclude reference="gyV-bd-cln"/>
                                             <exclude reference="xAs-jD-HBj"/>
                                             <exclude reference="jBk-0u-JnL"/>
-                                            <exclude reference="rVc-AZ-b7x"/>
                                             <exclude reference="PlK-r6-XrP"/>
                                             <exclude reference="uU4-il-Qar"/>
+                                            <exclude reference="rVc-AZ-b7x"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -183,9 +183,9 @@
                                             <include reference="gyV-bd-cln"/>
                                             <include reference="xAs-jD-HBj"/>
                                             <include reference="jBk-0u-JnL"/>
-                                            <include reference="rVc-AZ-b7x"/>
                                             <include reference="PlK-r6-XrP"/>
                                             <include reference="uU4-il-Qar"/>
+                                            <include reference="rVc-AZ-b7x"/>
                                         </mask>
                                     </variation>
                                 </view>
@@ -774,7 +774,7 @@
             <objects>
                 <collectionViewController id="RKC-AY-9Ve" customClass="InitiativeListCollectionViewController" customModule="TwojaInicjatywa" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Pjh-UL-BeJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="236"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="491"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aJY-12-ud7">
@@ -802,5 +802,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Ewz-Z6-VdR"/>
         <segue reference="9eN-yj-nJf"/>
+        <segue reference="cie-mo-LCS"/>
     </inferredMetricsTieBreakers>
 </document>
