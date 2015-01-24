@@ -12,13 +12,14 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var propositionsLabel: UILabel!
-    @IBOutlet var votesForLabel: UILabel!
-    @IBOutlet var votesAgainstLabel: UILabel!
-    
 
+    @IBOutlet var nameLabel: UILabel!
     
+    @IBOutlet var propositionsLabel: UILabel!
+
+    @IBOutlet var votesForLabel: UILabel!
+    
+    @IBOutlet var votesAgainstLabel: UILabel!
     
     override func viewDidLoad() {
         var votesFor : Int = 0
@@ -30,31 +31,20 @@ class ProfileViewController: UIViewController {
         idea1.rank = (120, 33)
         idea2.rank = (10, 20)
         
-        var user1 = Profile(user: "Rafał Proponent")
+        var user1 = Profile(fullName: "Rafał Proponente", email: "jan.szynal@gmail.com", password : "password")
         
-        user1.addedIdeas?.append(idea1)
-        user1.addedIdeas?.append(idea2)
-        
-        
-        println(user1)
-        
-        nameLabel.text = user1.user
-        
-        propositionsLabel.text = "\(user1.addedIdeas?.count)"
-        
-        if let tempIdeas = user1.addedIdeas
-        {
-            for idea in tempIdeas {
-                votesFor += idea.rank.pro
-                votesAgainst += idea.rank.con
-            }
-        }
+        user1.addedIdeas.append(idea1)
+        user1.addedIdeas.append(idea2)
         
         
+
         
+        nameLabel.text = user1.fullName
+        propositionsLabel.text = "\(user1.addedIdeas.count)"
+        votesForLabel.text = "\(user1.upVotes())"
+        votesAgainstLabel.text = "\(user1.downVotes())"
         
-        votesForLabel.text = "\(votesFor)"
-        votesAgainstLabel.text = "\(votesAgainst)"
+
         
         
         
