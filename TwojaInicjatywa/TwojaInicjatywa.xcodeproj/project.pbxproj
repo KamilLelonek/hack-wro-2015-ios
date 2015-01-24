@@ -37,11 +37,11 @@
 		54B6B4891A73CF2700BF13FE /* InitiativeListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */; };
 		54B6B48B1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B48A1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift */; };
 		54B6B48F1A73D72600BF13FE /* InitiativeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B48E1A73D72600BF13FE /* InitiativeCollectionViewCell.xib */; };
-		844131CB1A73CFAB00DD56C7 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844131CA1A73CFAB00DD56C7 /* SignUpViewController.m */; };
-		844131CE1A73CFC100DD56C7 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844131CD1A73CFC100DD56C7 /* SignInViewController.m */; };
 		844133AE1A73D23300DD56C7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844133AD1A73D23300DD56C7 /* AdSupport.framework */; };
 		844133B21A73D26B00DD56C7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844133B11A73D26B00DD56C7 /* CoreMotion.framework */; };
 		84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88F91A73B9E700F83619 /* Login.storyboard */; };
+		84FE933F1A73F50D00BD2CA6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE933E1A73F50D00BD2CA6 /* SignUpViewController.swift */; };
+		84FE93411A73FCA000BD2CA6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE93401A73FCA000BD2CA6 /* SignInViewController.swift */; };
 		9F96F9511A73E8DF000C34CB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F96F7D31A73E8DE000C34CB /* Bolts.framework */; };
 		9F96F9521A73E8DF000C34CB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F96F7D41A73E8DE000C34CB /* FacebookSDK.framework */; };
 		9F96F9531A73E8DF000C34CB /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F96F7D51A73E8DE000C34CB /* FBAudienceNetwork.framework */; };
@@ -99,14 +99,12 @@
 		54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeListCollectionViewController.swift; sourceTree = "<group>"; };
 		54B6B48A1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeCollectionViewCell.swift; path = Views/Cells/InitiativeCollectionViewCell.swift; sourceTree = "<group>"; };
 		54B6B48E1A73D72600BF13FE /* InitiativeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InitiativeCollectionViewCell.xib; path = Views/Cells/InitiativeCollectionViewCell.xib; sourceTree = "<group>"; };
-		844131C91A73CFAB00DD56C7 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
-		844131CA1A73CFAB00DD56C7 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		844131CC1A73CFC100DD56C7 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
-		844131CD1A73CFC100DD56C7 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		844133AD1A73D23300DD56C7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		844133AF1A73D25F00DD56C7 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		844133B11A73D26B00DD56C7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		84CE88F91A73B9E700F83619 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		84FE933E1A73F50D00BD2CA6 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		84FE93401A73FCA000BD2CA6 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		9F96F7D31A73E8DE000C34CB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		9F96F7D41A73E8DE000C34CB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		9F96F7D51A73E8DE000C34CB /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
@@ -243,16 +241,14 @@
 		54B6B47B1A73C0CF00BF13FE /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84FE933E1A73F50D00BD2CA6 /* SignUpViewController.swift */,
+				84FE93401A73FCA000BD2CA6 /* SignInViewController.swift */,
 				54B6B47C1A73C0CF00BF13FE /* ContainerViewController.swift */,
 				54B6B47D1A73C0CF00BF13FE /* InitiativeAddViewController.swift */,
 				54B6B47E1A73C0CF00BF13FE /* InitiativeDetailsViewController.swift */,
 				54B6B47F1A73C0CF00BF13FE /* InitiativeListViewController.swift */,
 				54B6B4801A73C0CF00BF13FE /* MapViewController.swift */,
 				54B6B4811A73C0CF00BF13FE /* ProfileViewController.swift */,
-				844131C91A73CFAB00DD56C7 /* SignUpViewController.h */,
-				844131CA1A73CFAB00DD56C7 /* SignUpViewController.m */,
-				844131CC1A73CFC100DD56C7 /* SignInViewController.h */,
-				844131CD1A73CFC100DD56C7 /* SignInViewController.m */,
 				54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */,
 			);
 			path = "View Controllers";
@@ -414,15 +410,15 @@
 				54B6B4851A73C0CF00BF13FE /* InitiativeListViewController.swift in Sources */,
 				9FC221901A73B55400836590 /* Idea.swift in Sources */,
 				9FC2218E1A73B4B900836590 /* Profile.swift in Sources */,
-				844131CE1A73CFC100DD56C7 /* SignInViewController.m in Sources */,
 				54B6B4821A73C0CF00BF13FE /* ContainerViewController.swift in Sources */,
+				84FE93411A73FCA000BD2CA6 /* SignInViewController.swift in Sources */,
 				54B6B44F1A73AD5100BF13FE /* AppDelegate.swift in Sources */,
-				844131CB1A73CFAB00DD56C7 /* SignUpViewController.m in Sources */,
 				54B6B4871A73C0CF00BF13FE /* ProfileViewController.swift in Sources */,
 				1168E2C21A73E0C300F5B86C /* MapMarkerDetail.swift in Sources */,
 				54B6B4841A73C0CF00BF13FE /* InitiativeDetailsViewController.swift in Sources */,
 				54B6B4891A73CF2700BF13FE /* InitiativeListCollectionViewController.swift in Sources */,
 				54B6B4861A73C0CF00BF13FE /* MapViewController.swift in Sources */,
+				84FE933F1A73F50D00BD2CA6 /* SignUpViewController.swift in Sources */,
 				54B6B48B1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
