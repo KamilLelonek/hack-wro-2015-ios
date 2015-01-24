@@ -26,14 +26,17 @@
 		54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4551A73AD5100BF13FE /* Images.xcassets */; };
 		54B6B4591A73AD5100BF13FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4571A73AD5100BF13FE /* LaunchScreen.xib */; };
 		54B6B4651A73AD5100BF13FE /* TwojaInicjatywaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */; };
-		84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88F91A73B9E700F83619 /* Login.storyboard */; };
-		84CE88FC1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */; };
 		54B6B4821A73C0CF00BF13FE /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47C1A73C0CF00BF13FE /* ContainerViewController.swift */; };
 		54B6B4831A73C0CF00BF13FE /* InitiativeAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47D1A73C0CF00BF13FE /* InitiativeAddViewController.swift */; };
 		54B6B4841A73C0CF00BF13FE /* InitiativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47E1A73C0CF00BF13FE /* InitiativeDetailsViewController.swift */; };
 		54B6B4851A73C0CF00BF13FE /* InitiativeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47F1A73C0CF00BF13FE /* InitiativeListViewController.swift */; };
 		54B6B4861A73C0CF00BF13FE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4801A73C0CF00BF13FE /* MapViewController.swift */; };
 		54B6B4871A73C0CF00BF13FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4811A73C0CF00BF13FE /* ProfileViewController.swift */; };
+		54B6B4891A73CF2700BF13FE /* InitiativeListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */; };
+		54B6B48B1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B48A1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift */; };
+		54B6B48F1A73D72600BF13FE /* InitiativeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B48E1A73D72600BF13FE /* InitiativeCollectionViewCell.xib */; };
+		84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88F91A73B9E700F83619 /* Login.storyboard */; };
+		84CE88FC1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */; };
 		9FC2218E1A73B4B900836590 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218D1A73B4B900836590 /* Profile.swift */; };
 		9FC221901A73B55400836590 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2218F1A73B55400836590 /* Idea.swift */; };
 /* End PBXBuildFile section */
@@ -73,14 +76,17 @@
 		54B6B45E1A73AD5100BF13FE /* TwojaInicjatywaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwojaInicjatywaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B6B4631A73AD5100BF13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwojaInicjatywaTests.swift; sourceTree = "<group>"; };
-		84CE88F91A73B9E700F83619 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "facebook-ios-sdk-3.22.pkg"; sourceTree = "<group>"; };
 		54B6B47C1A73C0CF00BF13FE /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		54B6B47D1A73C0CF00BF13FE /* InitiativeAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeAddViewController.swift; sourceTree = "<group>"; };
 		54B6B47E1A73C0CF00BF13FE /* InitiativeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeDetailsViewController.swift; sourceTree = "<group>"; };
 		54B6B47F1A73C0CF00BF13FE /* InitiativeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeListViewController.swift; sourceTree = "<group>"; };
 		54B6B4801A73C0CF00BF13FE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		54B6B4811A73C0CF00BF13FE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeListCollectionViewController.swift; sourceTree = "<group>"; };
+		54B6B48A1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InitiativeCollectionViewCell.swift; path = Views/Cells/InitiativeCollectionViewCell.swift; sourceTree = "<group>"; };
+		54B6B48E1A73D72600BF13FE /* InitiativeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InitiativeCollectionViewCell.xib; path = Views/Cells/InitiativeCollectionViewCell.xib; sourceTree = "<group>"; };
+		84CE88F91A73B9E700F83619 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "facebook-ios-sdk-3.22.pkg"; sourceTree = "<group>"; };
 		9FC2218D1A73B4B900836590 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9FC2218F1A73B55400836590 /* Idea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				54B6B44E1A73AD5100BF13FE /* AppDelegate.swift */,
+				54B6B48C1A73D64200BF13FE /* Views */,
 				54B6B47B1A73C0CF00BF13FE /* View Controllers */,
 				9FC221931A73BA6D00836590 /* Model */,
 				54B6B4521A73AD5100BF13FE /* Main.storyboard */,
@@ -207,8 +214,26 @@
 				54B6B47F1A73C0CF00BF13FE /* InitiativeListViewController.swift */,
 				54B6B4801A73C0CF00BF13FE /* MapViewController.swift */,
 				54B6B4811A73C0CF00BF13FE /* ProfileViewController.swift */,
+				54B6B4881A73CF2700BF13FE /* InitiativeListCollectionViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		54B6B48C1A73D64200BF13FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54B6B48D1A73D64B00BF13FE /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		54B6B48D1A73D64B00BF13FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				54B6B48A1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift */,
+				54B6B48E1A73D72600BF13FE /* InitiativeCollectionViewCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		9FC221931A73BA6D00836590 /* Model */ = {
@@ -269,7 +294,6 @@
 				TargetAttributes = {
 					54B6B4481A73AD5100BF13FE = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 4V9FNC79Z9;
 					};
 					54B6B45D1A73AD5100BF13FE = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -306,6 +330,7 @@
 				84CE88FC1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg in Resources */,
 				54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */,
 				84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */,
+				54B6B48F1A73D72600BF13FE /* InitiativeCollectionViewCell.xib in Resources */,
 				1168E2A11A73B5CB00F5B86C /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +357,9 @@
 				54B6B44F1A73AD5100BF13FE /* AppDelegate.swift in Sources */,
 				54B6B4871A73C0CF00BF13FE /* ProfileViewController.swift in Sources */,
 				54B6B4841A73C0CF00BF13FE /* InitiativeDetailsViewController.swift in Sources */,
+				54B6B4891A73CF2700BF13FE /* InitiativeListCollectionViewController.swift in Sources */,
 				54B6B4861A73C0CF00BF13FE /* MapViewController.swift in Sources */,
+				54B6B48B1A73D63E00BF13FE /* InitiativeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
