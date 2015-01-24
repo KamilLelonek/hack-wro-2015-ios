@@ -18,4 +18,9 @@ class InitiativeListViewController: UIViewController {
         
         self.view.backgroundColor = UIColor.yellowColor()
     }
+    
+    @IBAction func addInitiative(sender: AnyObject) {
+        self.performSegueWithIdentifier(InitiativeListToAddInitiativeSegueIdentifier, sender: sender)
+    }
+    
 }

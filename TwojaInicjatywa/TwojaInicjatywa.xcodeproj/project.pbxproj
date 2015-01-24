@@ -26,6 +26,8 @@
 		54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4551A73AD5100BF13FE /* Images.xcassets */; };
 		54B6B4591A73AD5100BF13FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B6B4571A73AD5100BF13FE /* LaunchScreen.xib */; };
 		54B6B4651A73AD5100BF13FE /* TwojaInicjatywaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */; };
+		84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88F91A73B9E700F83619 /* Login.storyboard */; };
+		84CE88FC1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg in Resources */ = {isa = PBXBuildFile; fileRef = 84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */; };
 		54B6B4821A73C0CF00BF13FE /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47C1A73C0CF00BF13FE /* ContainerViewController.swift */; };
 		54B6B4831A73C0CF00BF13FE /* InitiativeAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47D1A73C0CF00BF13FE /* InitiativeAddViewController.swift */; };
 		54B6B4841A73C0CF00BF13FE /* InitiativeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6B47E1A73C0CF00BF13FE /* InitiativeDetailsViewController.swift */; };
@@ -71,6 +73,8 @@
 		54B6B45E1A73AD5100BF13FE /* TwojaInicjatywaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwojaInicjatywaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B6B4631A73AD5100BF13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B6B4641A73AD5100BF13FE /* TwojaInicjatywaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwojaInicjatywaTests.swift; sourceTree = "<group>"; };
+		84CE88F91A73B9E700F83619 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */ = {isa = PBXFileReference; lastKnownFileType = file; path = "facebook-ios-sdk-3.22.pkg"; sourceTree = "<group>"; };
 		54B6B47C1A73C0CF00BF13FE /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		54B6B47D1A73C0CF00BF13FE /* InitiativeAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeAddViewController.swift; sourceTree = "<group>"; };
 		54B6B47E1A73C0CF00BF13FE /* InitiativeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitiativeDetailsViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		1168E2A21A73B5D200F5B86C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84CE88FB1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg */,
 				1168E2BD1A73BDC000F5B86C /* SystemConfiguration.framework */,
 				1168E2BB1A73BDB600F5B86C /* QuartzCore.framework */,
 				1168E2B91A73BDA700F5B86C /* OpenGLES.framework */,
@@ -158,6 +163,7 @@
 				54B6B47B1A73C0CF00BF13FE /* View Controllers */,
 				9FC221931A73BA6D00836590 /* Model */,
 				54B6B4521A73AD5100BF13FE /* Main.storyboard */,
+				84CE88F91A73B9E700F83619 /* Login.storyboard */,
 				54B6B4551A73AD5100BF13FE /* Images.xcassets */,
 				54B6B4571A73AD5100BF13FE /* LaunchScreen.xib */,
 				1168E2A21A73B5D200F5B86C /* Frameworks */,
@@ -297,7 +303,9 @@
 			files = (
 				54B6B4541A73AD5100BF13FE /* Main.storyboard in Resources */,
 				54B6B4591A73AD5100BF13FE /* LaunchScreen.xib in Resources */,
+				84CE88FC1A73CA5100F83619 /* facebook-ios-sdk-3.22.pkg in Resources */,
 				54B6B4561A73AD5100BF13FE /* Images.xcassets in Resources */,
+				84CE88FA1A73B9E700F83619 /* Login.storyboard in Resources */,
 				1168E2A11A73B5CB00F5B86C /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

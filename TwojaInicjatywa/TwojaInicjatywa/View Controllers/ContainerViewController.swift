@@ -12,28 +12,44 @@ let ContainerToProfileSegueIdentifier = "ContainerToProfile"
 
 class ContainerViewController: UITabBarController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        self.tabBar.removeFromSuperview()
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         
         self._addChangeViewContentView()
         self._addProfileBarButtonItem()
     }
     
-    private func _addProfileBarButtonItem() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
         
+        self.tabBar.removeFromSuperview()
+    }
+    
+    private func _addProfileBarButtonItem() {
+        self.navigationItem.leftBarButtonItem  = UIBarButtonItem(image:UIImage(named: "profile_icon"), style: UIBarButtonItemStyle.Plain, target: self, action:  Selector("_didTapShowProfile:"))
+    }
+    
+    func _didTapShowProfile(sender: UIBarButtonItem) {
+        self.performSegueWithIdentifier(ContainerToProfileSegueIdentifier, sender: sender)
     }
     
     private func _addChangeViewContentView() {
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: Selector("_didTapChangeButton:"))
-        
-        self.navigationItem.rightBarButtonItem  = UIBarButtonItem(image: UIImage(named: "map_icon"), style: UIBarButtonItemStyle.Plain, target: self, action:  Selector("_didTapChangeButton:"))
+        self.navigationItem.rightBarButtonItem  = UIBarButtonItem(image:UIImage(named: "list_icon"), style: UIBarButtonItemStyle.Plain, target: self, action:  Selector("_didTapChangeButton:"))
     }
     
     func _didTapChangeButton(sender: UIBarButtonItem) {
         self.changeViewController()
+    }
+    
+    override var selectedIndex: Int {
+        didSet {
+            if self.selectedIndex == 0 {
+                self.navigationItem.rightBarButtonItem?.image = UIImage(named: "list_icon")
+            } else {
+                self.navigationItem.rightBarButtonItem?.image = UIImage(named: "map_icon")
+            }
+        }
     }
     
     func changeViewController() {
