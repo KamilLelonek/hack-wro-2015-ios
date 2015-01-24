@@ -30,7 +30,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         
         ideas.append(idea1)
         ideas.append(idea2)
-
+        
         println(ideas)
         
         var camera = GMSCameraPosition.cameraWithLatitude(51.09168, longitude:17.04015, zoom:14)

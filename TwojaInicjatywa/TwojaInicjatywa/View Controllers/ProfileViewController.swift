@@ -31,7 +31,7 @@ class ProfileViewController: UIViewController {
         idea1.rank = (120, 33)
         idea2.rank = (10, 20)
         
-        var user1 = Profile(fullName: "Rafał Proponente", email: "jan.szynal@gmail.com", password : "password")
+        var user1 = Profile(fullName: "Rafał Proponent", email: "jan.szynal@gmail.com", password : "password")
         
         user1.addedIdeas.append(idea1)
         user1.addedIdeas.append(idea2)
