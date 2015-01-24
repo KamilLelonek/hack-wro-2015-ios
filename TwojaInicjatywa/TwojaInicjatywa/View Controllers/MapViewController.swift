@@ -26,6 +26,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate
         
         var camera = GMSCameraPosition.cameraWithLatitude(51.09168, longitude:17.04015, zoom:14)
         mapView.camera = camera
+        mapView.settings.myLocationButton = true
+        mapView.myLocationEnabled = true
         
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
