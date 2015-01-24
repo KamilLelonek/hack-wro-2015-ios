@@ -15,20 +15,22 @@ class InitiativeListCollectionViewController: UICollectionViewController, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initiativeList = sharedIdeas()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let idea1 = Idea(coordinates: CLLocationCoordinate2D(latitude: 45.0, longitude: 23.0), name: "Moja inicjacja")
-        idea1.photo = UIImage(named: "city_placeholder")
-        
-        let idea2 = Idea(coordinates: CLLocationCoordinate2D(latitude: 50.0, longitude: 23.0), name: "Chcę kościół")
-        idea2.photo = UIImage(named: "city_placeholder")
-        
-        self.initiativeList.append(idea1)
-        self.initiativeList.append(idea2)
+//        let idea1 = Idea(coordinates: CLLocationCoordinate2D(latitude: 45.0, longitude: 23.0), name: "Moja inicjacja")
+//        idea1.photo = UIImage(named: "city_placeholder")
+//        
+//        let idea2 = Idea(coordinates: CLLocationCoordinate2D(latitude: 50.0, longitude: 23.0), name: "Chcę kościół")
+//        idea2.photo = UIImage(named: "city_placeholder")
+//        
+//        self.initiativeList.append(idea1)
+//        self.initiativeList.append(idea2)
         
         let cellNib = UINib(nibName: "InitiativeCollectionViewCell", bundle: nil)
         self.collectionView?.registerNib(cellNib, forCellWithReuseIdentifier: "InitiativeCollectionViewCell")

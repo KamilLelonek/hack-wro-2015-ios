@@ -25,11 +25,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
     {
         super.viewDidLoad()
         
-        var idea1 = Idea(coordinates: CLLocationCoordinate2DMake(51.1220568429801, 17.0339102902900), name: "zbudować kościół")
-        var idea2 = Idea(coordinates: CLLocationCoordinate2DMake(51.1220568429222, 17.0339902903400), name: "postawić burdel")
-        
-        ideas.append(idea1)
-        ideas.append(idea2)
+        ideas = sharedIdeas()
         
         println(ideas)
         
@@ -107,6 +103,30 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         return true
     }
     
+    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool
+    {
+        if let view = self.mapMarkerDetailView
+        {
+            
+        } else {
+            println("dziala: \(marker.title)")
+            let nib = UINib(nibName: "InitiativeCollectionViewCell", bundle: nil)
+            let view = nib.instantiateWithOwner(nil, options: nil)[0] as InitiativeCollectionViewCell
+            view.frame = CGRect(x: 0, y: self.view.frame.size.height, width: self.view.frame.width, height: 110)
+            self.view.addSubview(view)
+            
+            self.mapMarkerDetailView = view
+            UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.2, options: nil, animations: { () -> Void in
+                view.center.y -= 100.0
+                }) { (finished) -> Void in
+                    
+            }
+            
+        }
+        
+        return true
+    }
+    
     
     func mapView(mapView: GMSMapView!, didTapAtCoordinate coordinate: CLLocationCoordinate2D)
     {
@@ -119,7 +139,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
                     self.mapMarkerDetailView?.removeFromSuperview()
                     self.mapMarkerDetailView = nil
             }
-
+            
         }
     }
     
