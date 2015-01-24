@@ -417,41 +417,49 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gzD-5Q-vmE">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B66-mp-g11">
                                 <rect key="frame" x="0.0" y="315" width="600" height="236"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
+                                <connections>
+                                    <segue destination="RKC-AY-9Ve" kind="embed" id="Tm4-k1-oh4"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="EKG-cL-QHM" secondAttribute="centerX" constant="-70" id="04P-V3-33g"/>
+                            <constraint firstAttribute="trailing" secondItem="B66-mp-g11" secondAttribute="trailing" id="3yH-Lw-hvF"/>
                             <constraint firstItem="v8F-Cr-EM4" firstAttribute="top" secondItem="eUe-oS-vp8" secondAttribute="bottom" constant="14" id="47Q-uz-lwE"/>
                             <constraint firstItem="r7B-7F-vLY" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="144" id="9wG-yR-0BE"/>
                             <constraint firstAttribute="centerX" secondItem="3vc-BC-6xP" secondAttribute="centerX" constant="55" id="AhN-KS-psf"/>
-                            <constraint firstItem="GKH-Fi-g33" firstAttribute="top" secondItem="gzD-5Q-vmE" secondAttribute="bottom" id="EFN-O2-euX"/>
                             <constraint firstItem="wgT-ff-BfN" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="144" id="EVn-0M-V3v"/>
-                            <constraint firstItem="gzD-5Q-vmE" firstAttribute="top" secondItem="9ux-jo-8so" secondAttribute="bottom" constant="6" id="FaO-tP-cYy"/>
                             <constraint firstItem="BJn-A4-DlJ" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="30" id="GX2-fJ-VBR"/>
                             <constraint firstItem="ENI-m8-JHw" firstAttribute="top" secondItem="r7B-7F-vLY" secondAttribute="bottom" constant="8" id="KPM-M6-LwU"/>
                             <constraint firstAttribute="centerX" secondItem="6TE-9x-gS1" secondAttribute="centerX" constant="-55" id="LBA-0B-0rG"/>
-                            <constraint firstItem="gzD-5Q-vmE" firstAttribute="leading" secondItem="iJ3-To-frN" secondAttribute="leading" id="N5Q-nk-lHJ"/>
                             <constraint firstAttribute="centerX" secondItem="r7B-7F-vLY" secondAttribute="centerX" constant="100" id="PLT-kC-nOx"/>
                             <constraint firstItem="9ux-jo-8so" firstAttribute="leading" secondItem="iJ3-To-frN" secondAttribute="leadingMargin" id="Tvi-PY-mXz"/>
                             <constraint firstItem="jtk-GN-KFs" firstAttribute="top" secondItem="wgT-ff-BfN" secondAttribute="bottom" constant="8" id="Ubf-0P-hER"/>
-                            <constraint firstItem="gzD-5Q-vmE" firstAttribute="top" secondItem="v8F-Cr-EM4" secondAttribute="bottom" constant="60" id="Xzm-Co-1nZ"/>
+                            <constraint firstItem="B66-mp-g11" firstAttribute="top" secondItem="v8F-Cr-EM4" secondAttribute="bottom" constant="60" id="XMj-Mr-XVv"/>
                             <constraint firstItem="3vc-BC-6xP" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="131" id="YhJ-Be-AkI"/>
                             <constraint firstAttribute="centerX" secondItem="jtk-GN-KFs" secondAttribute="centerX" constant="-105" id="bZz-xf-ugc"/>
-                            <constraint firstAttribute="trailing" secondItem="gzD-5Q-vmE" secondAttribute="trailing" id="c0V-h6-Jwj"/>
                             <constraint firstAttribute="centerX" secondItem="ENI-m8-JHw" secondAttribute="centerX" constant="105" id="fbs-jC-l4w"/>
                             <constraint firstItem="EKG-cL-QHM" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="30" id="fgp-iN-1tG"/>
+                            <constraint firstItem="GKH-Fi-g33" firstAttribute="top" secondItem="B66-mp-g11" secondAttribute="bottom" id="gnu-mQ-ua2"/>
+                            <constraint firstItem="B66-mp-g11" firstAttribute="leading" secondItem="iJ3-To-frN" secondAttribute="leading" id="lrn-4r-oOj"/>
                             <constraint firstAttribute="centerX" secondItem="wgT-ff-BfN" secondAttribute="centerX" constant="-100" id="mji-bL-3Xu"/>
                             <constraint firstAttribute="centerX" secondItem="eUe-oS-vp8" secondAttribute="centerX" id="nzt-MO-HYa"/>
                             <constraint firstItem="eUe-oS-vp8" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="144" id="pNm-YO-vRu"/>
+                            <constraint firstItem="B66-mp-g11" firstAttribute="top" secondItem="9ux-jo-8so" secondAttribute="bottom" constant="6" id="sbk-Gh-9wP"/>
                             <constraint firstItem="6TE-9x-gS1" firstAttribute="top" secondItem="Lch-yK-Nmz" secondAttribute="bottom" constant="131" id="t3d-vQ-MRI"/>
                             <constraint firstAttribute="centerX" secondItem="v8F-Cr-EM4" secondAttribute="centerX" id="xWz-jj-nxz"/>
                             <constraint firstAttribute="centerX" secondItem="BJn-A4-DlJ" secondAttribute="centerX" constant="130" id="yV5-Uz-bM1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="EKG-cL-QHM" id="wZd-bX-vdu"/>
+                        <outlet property="propositionsLabel" destination="r7B-7F-vLY" id="rmh-Ta-Fte"/>
+                        <outlet property="votesAgainstLabel" destination="wgT-ff-BfN" id="JVk-2F-1rH"/>
+                        <outlet property="votesForLabel" destination="eUe-oS-vp8" id="q7V-n9-oSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dP-IT-ImW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -583,7 +591,7 @@
             <objects>
                 <collectionViewController id="RKC-AY-9Ve" customClass="InitiativeListCollectionViewController" customModule="TwojaInicjatywa" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Pjh-UL-BeJ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="491"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="236"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aJY-12-ud7">
@@ -608,7 +616,8 @@
         <image name="stock-man" width="392" height="306"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="x2W-dx-aOF"/>
-        <segue reference="Ewz-Z6-VdR"/>
+        <segue reference="9eN-yj-nJf"/>
+        <segue reference="Tm4-k1-oh4"/>
+        <segue reference="dIK-MN-JsU"/>
     </inferredMetricsTieBreakers>
 </document>

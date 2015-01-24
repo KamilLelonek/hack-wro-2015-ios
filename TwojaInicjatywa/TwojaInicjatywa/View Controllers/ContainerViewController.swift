@@ -15,6 +15,8 @@ class ContainerViewController: UITabBarController {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
+        self.title = "Mapa"
+        
         self._addChangeViewContentView()
         self._addProfileBarButtonItem()
     }
@@ -50,8 +52,10 @@ class ContainerViewController: UITabBarController {
         didSet {
             if self.selectedIndex == 0 {
                 self.navigationItem.rightBarButtonItem?.image = UIImage(named: "list_icon")
+                self.title = "Mapa"
             } else {
                 self.navigationItem.rightBarButtonItem?.image = UIImage(named: "map_icon")
+                self.title = "Inicjatywy"
             }
         }
     }
