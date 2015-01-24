@@ -9,5 +9,13 @@
 import UIKit
 
 class InitiativeAddViewController: UIViewController {
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+        newIdea: Idea
+        
+    }
 }
