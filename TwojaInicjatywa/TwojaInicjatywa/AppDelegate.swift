@@ -57,10 +57,15 @@ func sharedIdeas() -> [Idea]
 
 {
     var idea1 = Idea(coordinates: CLLocationCoordinate2DMake(51.1220568429801, 17.0339102902900), name: "zbudować kościół")
+    idea1.photo = UIImage(named:"city_placeholder")
     var idea2 = Idea(coordinates: CLLocationCoordinate2DMake(51.1220568429222, 17.0339902903400), name: "postawić burdel")
+    idea2.photo = UIImage(named:"image_test")
     var idea3 = Idea(coordinates: CLLocationCoordinate2DMake(51.121583, 17.034822), name: "budka z hot-dogami")
+    idea3.photo = UIImage(named:"city_placeholder")
     var idea4 = Idea(coordinates: CLLocationCoordinate2DMake(51.121671, 17.037484), name: "kosz na śmieci")
+    idea4.photo = UIImage(named:"image_test")
     var idea5 = Idea(coordinates: CLLocationCoordinate2DMake(51.120021, 17.035349), name: "fryzjer")
+    idea5.photo = UIImage(named:"city_placeholder")
     var idea6 = Idea(coordinates: CLLocationCoordinate2DMake(51.121671, 17.032356), name: "zagospodarowanie starej fabryki")
     
     return [idea1, idea2, idea3, idea4, idea5, idea6]
