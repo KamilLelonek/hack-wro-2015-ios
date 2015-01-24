@@ -8,19 +8,18 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 class Idea{
-    var coordinates : (latitude: Double, attitude: Double)
+    var coordinates : CLLocationCoordinate2D
     var comments: [String]?
     var rank = (pro : 0, con : 0)
     var photo : UIImage?
     
     
-    init( coordinates: (latitude: Double, attitude: Double)){
-        
-        self.coordinates.attitude = coordinates.attitude
-        self.coordinates.latitude = coordinates.latitude
-        
+    init( coordinates: CLLocationCoordinate2D){
+    
+        self.coordinates = coordinates
     }
     
 }
