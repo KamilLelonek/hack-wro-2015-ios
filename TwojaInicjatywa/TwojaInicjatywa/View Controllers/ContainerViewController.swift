@@ -10,17 +10,22 @@ import UIKit
 
 let ContainerToProfileSegueIdentifier = "ContainerToProfile"
 
-class ContainerViewController: UIViewController {
+class ContainerViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.tabBar.removeFromSuperview()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    var mapViewController: UIViewController?
+    var initiativeListViewController: UIViewController?
 
     func showMapViewController() {
         
