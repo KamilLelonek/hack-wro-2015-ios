@@ -103,7 +103,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         return true
     }
     
-    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool
+    
+    
+    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!)
     {
         if let view = self.mapMarkerDetailView
         {
@@ -123,8 +125,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
             }
             
         }
-        
-        return true
     }
     
     
